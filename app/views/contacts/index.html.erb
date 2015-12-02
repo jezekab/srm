@@ -8,6 +8,7 @@
         <th>Last Name</th>
         <th>E-Mail</th>
         <th>Contact Number</th>
+        <th>Contact Type</th>
     </tr>
 
     <% @contacts.each do |contact| %>
@@ -16,6 +17,7 @@
         <td><%= contact.lname %></td>
         <td><%= contact.email %></td>
         <td><%= contact.number %></td>
+        <td><%= contact._type %></td>
         <td><%= link_to 'Show', contact_path(contact) %></td>
         <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
         <td><%= link_to 'Destroy', contact_path(contact),
