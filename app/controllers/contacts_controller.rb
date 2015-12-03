@@ -48,3 +48,14 @@ class ContactsController < ApplicationController
     params.require(:contact).permit(:fname, :lname, :email, :number)
   end
 end
+
+class StudentsController < ContactsController
+  private
+  def contact_params
+    params.require(:contact).permit(:fname, :lname, :email, :number, :student_number)
+  end
+end
+
+class ExecutivesController < ContactsController
+
+end
