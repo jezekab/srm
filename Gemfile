@@ -43,5 +43,8 @@ group :development do
   gem 'spring'
 end
 
-# Use MongoDB
+# Use MongoDB as the 'database'
 gem 'mongoid', '~> 5.0.0'
+
+# Use React-JS as your pretty V in MVC
+gem 'react-rails', '~> 1.5.0'
