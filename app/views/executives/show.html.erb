@@ -1,8 +1,42 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>First Name:</strong>
+  <%= @executive.fname %>
+</p>
+
+<p>
+  <strong>Last Name:</strong>
+  <%= @executive.lname %>
+</p>
+
+<p>
   <strong>Position:</strong>
   <%= @executive.position %>
+</p>
+
+<p>
+  <strong>E-Mail:</strong>
+  <%= @executive.email %>
+</p>
+
+<p>
+  <strong>Contact Number:</strong>
+  <%= @executive.number %>
+</p>
+<p>
+  <strong>Student number:</strong>
+  <%= @executive.student_number %>
+</p>
+
+<p>
+  <strong>Faculty:</strong>
+  <%= @executive.faculty %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @executive.year %>
 </p>
 
 <%= link_to 'Edit', edit_executive_path(@executive) %> |
