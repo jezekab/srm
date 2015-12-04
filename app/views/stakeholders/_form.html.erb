@@ -1,0 +1,49 @@
+<%= form_for(@stakeholder) do |f| %>
+  <% if @stakeholder.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@stakeholder.errors.count, "error") %> prohibited this stakeholder from being saved:</h2>
+
+      <ul>
+      <% @stakeholder.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <p>
+      <%= f.label :'First Name' %><br>
+      <%= f.text_field :fname %>
+    </p>
+
+    <p>
+      <%= f.label :'Last Name' %><br>
+      <%= f.text_field :lname %>
+    </p>
+
+    <p>
+      <%= f.label :'E-Mail' %><br>
+      <%= f.text_field :email %>
+    </p>
+
+    <p>
+      <%= f.label :'Contact Number' %><br>
+      <%= f.text_field :number %>
+    </p>
+
+  <div class="field">
+    <%= f.label :workplace %><br>
+    <%= f.text_field :workplace %>
+  </div>
+  <div class="field">
+    <%= f.label :department %><br>
+    <%= f.text_field :department %>
+  </div>
+  <div class="field">
+    <%= f.label :relation %><br>
+    <%= f.text_field :relation %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
