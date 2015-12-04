@@ -1,8 +1,7 @@
 <h1>All Contacts</h1>
 
-<%= react_component('HelloMessage', name: 'John') %>
-
 <%= link_to 'New Contact', new_contact_path %>
+<%= link_to 'New Student', new_student_path %>
 
 
 <table>
@@ -11,7 +10,7 @@
         <th>Last Name</th>
         <th>E-Mail</th>
         <th>Contact Number</th>
-        <th>Contact Type</th>
+        <th>Type</th>
     </tr>
 
     <% @contacts.each do |contact| %>
@@ -20,7 +19,7 @@
         <td><%= contact.lname %></td>
         <td><%= contact.email %></td>
         <td><%= contact.number %></td>
-        <td><%= contact._type %></td>
+         <td><%= contact.class %></td>
         <td><%= link_to 'Show', contact_path(contact) %></td>
         <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
         <td><%= link_to 'Destroy', contact_path(contact),
