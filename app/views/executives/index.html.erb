@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Executives</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Position</th>
+      <th>E-Mail</th>
+      <th>Contact Number</th>
+      <th>Student number</th>
+      <th>Faculty</th>
+      <th>Year</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @executives.each do |executive| %>
+      <tr>
+        <td><%= executive.fname %></td>
+        <td><%= executive.lname %></td>
+        <td><%= executive.position %></td>
+        <td><%= executive.email %></td>
+        <td><%= executive.number %></td>
+        <td><%= executive.student_number %></td>
+        <td><%= executive.faculty %></td>
+        <td><%= executive.year %></td>
+        <td><%= link_to 'Show', executive %></td>
+        <td><%= link_to 'Edit', edit_executive_path(executive) %></td>
+        <td><%= link_to 'Destroy', executive, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Executive', new_executive_path %>

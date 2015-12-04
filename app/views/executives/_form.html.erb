@@ -1,0 +1,54 @@
+<%= form_for(@executive) do |f| %>
+  <% if @executive.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@executive.errors.count, "error") %> prohibited this executive from being saved:</h2>
+
+      <ul>
+      <% @executive.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <p>
+      <%= f.label :'First Name' %><br>
+      <%= f.text_field :fname %>
+    </p>
+
+    <p>
+      <%= f.label :'Last Name' %><br>
+      <%= f.text_field :lname %>
+    </p>
+
+    <p>
+      <%= f.label :'E-Mail' %><br>
+      <%= f.text_field :email %>
+    </p>
+
+    <p>
+      <%= f.label :'Contact Number' %><br>
+      <%= f.text_field :number %>
+    </p>
+
+    <div class="field">
+      <%= f.label :student_number %><br>
+      <%= f.text_field :student_number %>
+    </div>
+    <div class="field">
+      <%= f.label :faculty %><br>
+      <%= f.text_field :faculty %>
+    </div>
+    <div class="field">
+      <%= f.label :year %><br>
+      <%= f.text_field :year %>
+    </div>
+
+  <div class="field">
+    <%= f.label :position %><br>
+    <%= f.text_field :position %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
