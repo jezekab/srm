@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :executives
   resources :stakeholders
   resources :students
+  resources :campaigns
   get 'welcome/index'
 
   resources :contacts
