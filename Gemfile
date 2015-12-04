@@ -7,6 +7,8 @@ gem 'rails', '4.2.5'
 gem 'sass-rails', '~> 5.0'
 # Use bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
+# Use Font-Awesome for Icons
+gem 'font-awesome-sass'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -50,6 +52,9 @@ gem 'mongoid', '~> 5.0.0'
 
 # Use React-JS as your pretty V in MVC
 gem 'react-rails', '~> 1.5.0'
+
+# Because everything's in fucking coffeescript
+gem 'sprockets-coffee-react'
 
 # Use Heroku Logger
 gem 'rails_12factor', group: :production
