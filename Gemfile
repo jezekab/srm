@@ -52,4 +52,4 @@ gem 'react-rails', '~> 1.5.0'
 # Use Heroku Logger
 gem 'rails_12factor', group: :production
 
-ruby '2.2.3p173'
+ruby '2.2.3'
