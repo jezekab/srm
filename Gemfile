@@ -48,3 +48,8 @@ gem 'mongoid', '~> 5.0.0'
 
 # Use React-JS as your pretty V in MVC
 gem 'react-rails', '~> 1.5.0'
+
+# Use Heroku Logger
+gem 'rails_12factor', group: :production
+
+ruby '2.2.3p173'
