@@ -4,6 +4,11 @@
 <%= link_to 'New Student', new_student_path %>
 <%= link_to 'New Stakeholder', new_stakeholder_path %>
 <%= link_to 'New Executive', new_executive_path %>
+<br>
+
+<%= link_to 'Show Students', students_path %>
+<%= link_to 'Show Stakeholders', stakeholders_path %>
+<%= link_to 'Show Executives', executives_path %>
 
 <table>
     <tr>
@@ -21,7 +26,7 @@
         <td><%= contact.email %></td>
         <td><%= contact.number %></td>
          <td><%= contact.class %></td>
-        <td><%= link_to 'Show', contact_path(contact) %></td>
+        <td><%= link_to 'Show', contact %></td>
         <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
         <td><%= link_to 'Destroy', contact_path(contact),
                       method: :delete,
