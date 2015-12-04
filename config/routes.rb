@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :executives
   resources :stakeholders
   resources :students
   get 'welcome/index'
