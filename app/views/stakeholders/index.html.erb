@@ -5,6 +5,10 @@
 <table>
   <thead>
     <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>E-Mail</th>
+      <th>Contact Number</th>
       <th>Workplace</th>
       <th>Department</th>
       <th>Relation</th>
@@ -15,6 +19,10 @@
   <tbody>
     <% @stakeholders.each do |stakeholder| %>
       <tr>
+        <td><%= stakeholder.fname %></td>
+        <td><%= stakeholder.lname %></td>
+        <td><%= stakeholder.email %></td>
+        <td><%= stakeholder.number %></td>
         <td><%= stakeholder.workplace %></td>
         <td><%= stakeholder.department %></td>
         <td><%= stakeholder.relation %></td>
